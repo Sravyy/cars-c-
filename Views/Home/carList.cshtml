@@ -1,0 +1,17 @@
+
+@{
+  Layout = "_Layout";
+}
+
+<h1>Car List</h1>
+<ul>
+  @foreach(string car in Model)
+  {
+   <li>@car</li>
+  }
+</ul>
+<p><a href="/">Add another Car</a></p>
+
+<form action="/car/list/clear" method="post">
+  <button type="submit" name="button">Clear the List</button>
+</form>

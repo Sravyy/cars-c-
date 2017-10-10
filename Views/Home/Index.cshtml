@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Your Cars List</h1>
+<form action="/car/create" method="post">
+  <label for="make">MakeModel of the Car</label>
+  <input id="make" name="make" type="text">
+  <label for="price">Price of the Car</label>
+  <input id="price" name="price" type="number">
+  <label for="miles">Miles of your car</label>
+  <input id="miles" name="miles" type="number">
+  <button type="submit">Submit</button>
+</form>
